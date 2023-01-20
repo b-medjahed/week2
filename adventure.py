@@ -1,7 +1,9 @@
 
 #Define functions
 #Define entrance function which represents the starting point when entering the cave.
-#User can only go forward or right.
+#Each function defines: a room, a wall or an exit.
+#User can go forward, right or left.
+#User will automatically go backward if they hit a wall.
 
 
 def entrance():
@@ -77,7 +79,8 @@ def snake():
                exit1()
             else:
                print("\nYou can only defeat this  venomous snake if you have a sword and antidote!\n")
-               print("\nYou have lost this fight\n")
+               print("\nYou have lost this fight!\n")
+               print("\nGAME OVER\n")
                quit()
         if fight=='escape':    
              remains()
@@ -133,8 +136,8 @@ def villain():
                     print("\nVillain challenged and defeated...\n")
                     exit2()
             else:
-                print("Villain slices advnturer with the sharp axe!")
-                print("GAME OVER")
+                print("\nVillain slices advnturer with the sharp axe!\n")
+                print("\nGAME OVER\n")
                 quit()
          if fight=='escape':    
              AntiVenom()
@@ -160,9 +163,9 @@ def AntiVenom():
         else:
             print("\nType in the correct option.\n")
 print("\nWelcome to the Adventure Game!\n ")
-print("\nIt takes place in a scary obscure cave.\n")
+print("\nIt takes place in a scary cave.\n")
 print("\nIn order to exit safely you have to consider the following options: forward, backward, left, right.\n ")
-print("Beware there will be times where you may hit a wall!!!\n")
+print("\nBeware there will be times where you may hit a wall!!!\n")
 
 global dead_end1
 global dead_end2
